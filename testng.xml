@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Lisner">
+	<test name="Marketing Leads Creation with lisner">
+		<classes>
+			<class
+				name="com.eva.marketing.submodule.testcases.Marketing_Campaings">
+			</class>
+		</classes>
+	</test>
+</suite>
+

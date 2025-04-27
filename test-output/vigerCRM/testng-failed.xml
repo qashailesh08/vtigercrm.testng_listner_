@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [vigerCRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Marketing Leads Creation(failed)">
+    <classes>
+      <class name="com.eva.marketing.submodule.testcases.MarketingLeads">
+        <methods>
+          <include name="beforeSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeClassMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeTestMethod"/>
+          <include name="verifyCreateLeads"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.eva.marketing.submodule.testcases.MarketingLeads -->
+    </classes>
+  </test> <!-- Marketing Leads Creation(failed) -->
+</suite> <!-- Failed suite [vigerCRM] -->

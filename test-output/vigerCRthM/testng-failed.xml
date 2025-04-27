@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [vigerCRthM]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="methods" name="Marketing Account(failed)">
+    <classes>
+      <class name="com.eva.marketing.submodule.testcases.MarketingAccounts">
+        <methods>
+          <include name="beforeSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeClassMethod"/>
+          <include name="verifyAccountDelete"/>
+          <include name="afterClass"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.eva.marketing.submodule.testcases.MarketingAccounts -->
+    </classes>
+  </test> <!-- Marketing Account(failed) -->
+</suite> <!-- Failed suite [vigerCRthM] -->
