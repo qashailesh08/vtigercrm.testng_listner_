@@ -59,7 +59,7 @@ public class DataUtil {
 	}
 
 	public int getRowNumberByTestCaseID(Sheet sheetObj, String tcID) {
-		/// below lines will search for testcase id in data sheet
+		/// below lines will search for test case id in data sheet
 		/// and will give row number where data exist
 		int tcRowNumber = -1;
 		int rowCount = sheetObj.getLastRowNum();
