@@ -11,7 +11,7 @@ public class Login_Page extends Login_Or {
 		this.util = util;
 	}
 
-	public void userCredential(String userName, String password, String selThemeByValue) {
+	public void userloginCredential(String userName, String password, String selThemeByValue) {
 		util.inputValue(getUserNameTB(), userName, "User Name TB");
 		util.inputValue(getUserPasswordTB(), password, "Password TB");
 		util.selectByValue(getColorThemeDD(), selThemeByValue, "Color Theme Dropdown");

@@ -22,7 +22,7 @@ public class DataUtil {
 
 		try {
 			/// access data file
-			InputStream fis = new FileInputStream("ExcelData\\\\Login.xlsx");
+			InputStream fis = new FileInputStream("ExcelData\\Login.xlsx");
 			wbook = new XSSFWorkbook(fis);
 		} catch (IOException e) {
 			e.printStackTrace();
