@@ -27,39 +27,34 @@ public class BaseTest {
 		System.out.println("I am before Class Method");
 	}
 
-	@Parameters({ "browser", "username", "password", "colortheme", "url" })
+//	@Parameters({ "browser", "url" })
+//	@BeforeMethod
+//	public void beforeMethod(String browser, String url,Method meth) {
+//		String tcName = meth.getName();
+//		util.createReport(tcName);
+//		System.out.println("I am beforeMethod method");
+//		util.launchBrowser(browser);
+//		util.maxWindow();
+//		util.openUrl(url);
+//
+//	}
+
+	@Parameters({ "browser", "username", "password", "url", "colortheme" })
 	@BeforeMethod
-	public void beforeMethod(String browser, String username, String password, String colortheme, String url,
+	public void beforeMethod(@Optional("chromebrowser") String browser, @Optional("admin") String username,
+			@Optional("admin") String password, @Optional("url") String url, @Optional("woodspice") String colortheme,
 			Method meth) {
 		System.out.println("I am beforeMethod method");
 		String tcName = meth.getName();
 		util.createReport(tcName);
-//		util.launchBrowser("browser");
 		util.launchBrowser(browser);
-		util.maxWindow();
+		// util.maxWindow();
 		util.openUrl(url);
 		Login_Page logObj = new Login_Page(util);
 		logObj.userloginCredential(username, password, colortheme);
 		util.verifyFirstSelectedOption(logObj.getColorThemeDD(), "woodspice", "Color Theme Dropdown");
 		logObj.loginButton();
-
 	}
-
-//	@Parameters({ "browser", "username", "password", "colortheme" })
-//	@BeforeMethod
-//	public void beforeMethod(@Optional("chromebrowser") String browser, @Optional("admin") String username,
-//			@Optional("admin") String password, @Optional("woodspice") String colortheme, Method meth) {
-//		System.out.println("I am beforeMethod method");
-//		String tcName = meth.getName();
-//		util.createReport(tcName);
-//		util.launchBrowser(browser);
-//		// util.maxWindow();
-//		util.openUrl("http://localhost:8888");
-//		Login_Page logObj = new Login_Page(util);
-//		logObj.userCredential(username, password, colortheme);
-//		util.verifyFirstSelectedOption(logObj.getColorThemeDD(), "woodspice", "Color Theme Dropdown");
-//		logObj.loginButton();
-//	}
 
 	@AfterMethod
 	public void afterMethod() {

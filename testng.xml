@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Parameters">
-	<test name="Marketing Leads Creation with lisner">
+	<test name="Marketing Leads Creation with listner">
 		<parameter name="browser" value="chromebrowser"></parameter>
 		<parameter name="username" value="admin"></parameter>
 		<parameter name="password" value="admin"></parameter>

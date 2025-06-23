@@ -1,12 +1,15 @@
 package com.eva.marketing.submodule.testcases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.eva.marketing.sub_module.reusable.code.Campaign_Detailes_Page;
+import com.eva.testng.listner.MyTestListners;
 import com.eva.testng.listner.RetryFailedTestCases;
 import com.eva.webutil.BaseTest;
 import com.evs.app.reausablecode.VtigercommonCode;
 
+@Listeners(MyTestListners.class)
 public class Marketing_Campaings extends BaseTest {
 
 	@Test(retryAnalyzer = RetryFailedTestCases.class)

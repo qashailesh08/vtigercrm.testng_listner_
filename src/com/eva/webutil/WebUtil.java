@@ -803,18 +803,22 @@ public class WebUtil {
 	 * 
 	 * @return: String
 	 */
-	public String getPageSource() {
-		String pageSource = null;
+	public void getPageSource(String expectedvalue) {
+		String actualValue = null;
 		try {
-			pageSource = driver.getPageSource();
-			getExtentTest().log(Status.INFO, "Page source found succesfully");
+			actualValue = driver.getPageSource().concat(expectedvalue);
+			if (actualValue.equals(expectedvalue)) {
+				getExtentTest().log(Status.PASS, actualValue + " Matched With Expected Value- " + expectedvalue);
+			} else {
+				getExtentTest().log(Status.FAIL, actualValue + " Matched With Expected Value- " + expectedvalue);
+			}
 		} catch (IllegalArgumentException e) {
 			getExtentTest().log(Status.WARNING, "Please set driver");
 		} catch (Exception e) {
-			getExtentTest().log(Status.FAIL, "Did not Find page source");
+			getExtentTest().log(Status.FAIL, "There is error to fetch the pagesource");
 			throw e;
 		}
-		return pageSource;
+
 	}
 
 	/*

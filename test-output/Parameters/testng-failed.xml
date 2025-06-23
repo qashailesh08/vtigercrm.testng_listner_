@@ -5,18 +5,19 @@
     <parameter name="password" value="admin"/>
     <parameter name="browser" value="chromebrowser"/>
     <parameter name="colortheme" value="woodspice"/>
+    <parameter name="url" value="http:/localhost:8888"/>
     <parameter name="username" value="admin"/>
     <classes>
       <class name="com.eva.marketing.submodule.testcases.Marketing_Campaings">
         <methods>
           <include name="beforeSuiteMethod"/>
           <include name="beforeMethod"/>
-          <include name="beforeClassMethod"/>
           <include name="afterTest"/>
+          <include name="beforeClassMethod"/>
           <include name="afterClass"/>
           <include name="beforeTestMethod"/>
-          <include name="verifyCreateNewCampaings"/>
           <include name="afterSuite"/>
+          <include name="verifyCreateNewCampaings"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.eva.marketing.submodule.testcases.Marketing_Campaings -->
