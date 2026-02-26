@@ -9,6 +9,7 @@ import com.eva.webutil.WebUtil;
 import lombok.Getter;
 
 @Getter
+
 public class Campaign_Detailes_Page_OR {
 
 	public Campaign_Detailes_Page_OR(WebUtil util) {

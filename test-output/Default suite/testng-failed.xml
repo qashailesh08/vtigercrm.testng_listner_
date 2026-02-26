@@ -5,14 +5,14 @@
     <classes>
       <class name="com.eva.marketing.submodule.testcases.Marketing_Campaings">
         <methods>
-          <include name="beforeClass"/>
+          <include name="beforeSuiteMethod"/>
           <include name="beforeMethod"/>
+          <include name="beforeClassMethod"/>
           <include name="afterTest"/>
           <include name="afterClass"/>
-          <include name="beforeSuite"/>
+          <include name="beforeTestMethod"/>
           <include name="verifyCreateNewCampaings"/>
           <include name="afterSuite"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.eva.marketing.submodule.testcases.Marketing_Campaings -->

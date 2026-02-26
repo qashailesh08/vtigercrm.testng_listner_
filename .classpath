@@ -9,11 +9,9 @@
 	<classpathentry kind="lib" path="jar/extentreports-5.1.1.jar"/>
 	<classpathentry kind="lib" path="jar/freemarker-2.3.32.jar"/>
 	<classpathentry kind="lib" path="jar/gson-2.10.1.jar"/>
-	<classpathentry kind="lib" path="jar/lombok.jar"/>
 	<classpathentry kind="lib" path="jar/lombok-1.18.26.jar"/>
 	<classpathentry kind="lib" path="jar/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="jar/rxjava-3.1.6.jar"/>
-	<classpathentry kind="lib" path="jar/selenium-server-4.24.0.jar"/>
 	<classpathentry kind="lib" path="poi/batik-anim-1.14.jar"/>
 	<classpathentry kind="lib" path="poi/batik-awt-util-1.14.jar"/>
 	<classpathentry kind="lib" path="poi/batik-bridge-1.14.jar"/>
@@ -64,6 +62,12 @@
 	<classpathentry kind="lib" path="poi/xmlbeans-5.1.1.jar"/>
 	<classpathentry kind="lib" path="poi/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="poi/xmlsec-3.0.0.jar"/>
+	<classpathentry kind="lib" path="jar/selenium-server-4.25.0.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -10,7 +10,6 @@ import com.eva.webutil.WebUtil;
 import lombok.Getter;
 
 @Getter
-
 public class VtigerCommonOr {
 
 	public VtigerCommonOr(WebUtil util) {
