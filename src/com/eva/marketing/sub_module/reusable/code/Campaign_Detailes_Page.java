@@ -2,10 +2,6 @@ package com.eva.marketing.sub_module.reusable.code;
 
 import com.eva.webutil.WebUtil;
 
-import lombok.Getter;
-
-@Getter
-
 public class Campaign_Detailes_Page extends Campaign_Detailes_Page_OR {
 	private WebUtil util;
 

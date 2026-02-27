@@ -10,7 +10,6 @@ import com.eva.webutil.WebUtil;
 import lombok.Getter;
 
 @Getter
-
 public class HomeLandingOR {
 	public HomeLandingOR(WebUtil util) {
 		PageFactory.initElements(util.getDriver(), this);

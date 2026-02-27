@@ -2,6 +2,7 @@
 <testng-results retried="1" ignored="0" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-09-22T16:25:53 IST" name="Parameters" finished-at="2025-09-22T16:29:03 IST" duration-ms="189875">
     <groups>
     </groups>
@@ -20,6 +21,26 @@
           </reporter-output>
         </test-method> <!-- beforeClassMethod -->
         <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:25:54 IST" name="beforeMethod" finished-at="2025-09-22T16:26:47 IST" duration-ms="53200" status="PASS">
+=======
+  <suite started-at="2026-02-03T20:55:02 IST" name="Parameters" finished-at="2026-02-03T20:58:29 IST" duration-ms="206893">
+    <groups>
+    </groups>
+    <test started-at="2026-02-03T20:55:02 IST" name="Marketing Leads Creation with listner" finished-at="2026-02-03T20:58:29 IST" duration-ms="206893">
+      <class name="com.eva.marketing.submodule.testcases.MarketingAccounts">
+        <test-method is-config="true" signature="beforeSuiteMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:55:02 IST" name="beforeSuiteMethod" finished-at="2026-02-03T20:55:02 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuiteMethod -->
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:55:02 IST" name="beforeTestMethod" finished-at="2026-02-03T20:55:02 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="beforeClassMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:55:02 IST" name="beforeClassMethod" finished-at="2026-02-03T20:55:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:55:02 IST" name="beforeMethod" finished-at="2026-02-03T20:56:05 IST" duration-ms="62458" status="PASS">
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
           <params>
             <param index="0">
               <value>
@@ -55,6 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method signature="verifyCreateNewAccount()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:26:47 IST" name="verifyCreateNewAccount" finished-at="2025-09-22T16:27:30 IST" duration-ms="42864" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -64,6 +86,17 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
         <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:27:33 IST" name="beforeMethod" finished-at="2025-09-22T16:27:57 IST" duration-ms="24225" status="PASS">
+=======
+        <test-method signature="verifyCreateNewAccount()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:56:05 IST" name="verifyCreateNewAccount" finished-at="2026-02-03T20:56:53 IST" duration-ms="47740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateNewAccount -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:56:53 IST" name="afterMethod" finished-at="2026-02-03T20:56:55 IST" duration-ms="2715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:56:55 IST" name="beforeMethod" finished-at="2026-02-03T20:57:24 IST" duration-ms="28401" status="PASS">
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
           <params>
             <param index="0">
               <value>
@@ -99,6 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method retried="true" signature="verifyAccountDelete()[pri:1, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:27:57 IST" name="verifyAccountDelete" finished-at="2025-09-22T16:28:15 IST" duration-ms="18367" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -122,6 +156,31 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [48fcd9fe322fc99deb430b95299391fd, findElement {value=//input[@name='selectall']/following::input[@name='selected_id'], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62934/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 48fcd9fe322fc99deb430b95299391fd
+=======
+        <test-method retried="true" signature="verifyAccountDelete()[pri:1, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:57:24 IST" name="verifyAccountDelete" finished-at="2026-02-03T20:57:39 IST" duration-ms="14958" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='selectall']/following::input[@name='selected_id']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bbc3c8bcfdb79325764cb3fb5fcd801, findElement {using=xpath, value=//input[@name='selectall']/following::input[@name='selected_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58969}, goog:processID: 26244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58969/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bbc3c8bcfdb79325764cb3fb5fcd801]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='selectall']/following::input[@name='selected_id']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bbc3c8bcfdb79325764cb3fb5fcd801, findElement {using=xpath, value=//input[@name='selectall']/following::input[@name='selected_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58969}, goog:processID: 26244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58969/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bbc3c8bcfdb79325764cb3fb5fcd801
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -174,11 +233,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountDelete -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:28:15 IST" name="afterMethod" finished-at="2025-09-22T16:28:18 IST" duration-ms="2591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
         <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:28:18 IST" name="beforeMethod" finished-at="2025-09-22T16:28:50 IST" duration-ms="32589" status="PASS">
+=======
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:57:39 IST" name="afterMethod" finished-at="2026-02-03T20:57:41 IST" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:57:41 IST" name="beforeMethod" finished-at="2026-02-03T20:58:10 IST" duration-ms="28990" status="PASS">
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
           <params>
             <param index="0">
               <value>
@@ -214,6 +281,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+<<<<<<< HEAD
         <test-method signature="verifyAccountDelete()[pri:1, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:28:50 IST" name="verifyAccountDelete" finished-at="2025-09-22T16:29:00 IST" duration-ms="9392" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -237,6 +305,31 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [6cc4ac4c59b2312b27cd69e725e95de8, findElement {value=//input[@name='selectall']/following::input[@name='selected_id'], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63006/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 6cc4ac4c59b2312b27cd69e725e95de8
+=======
+        <test-method signature="verifyAccountDelete()[pri:1, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:58:10 IST" name="verifyAccountDelete" finished-at="2026-02-03T20:58:25 IST" duration-ms="15057" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='selectall']/following::input[@name='selected_id']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [981443e6d1e3f13b846349a998112f3d, findElement {using=xpath, value=//input[@name='selectall']/following::input[@name='selected_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57095}, goog:processID: 11040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57095/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 981443e6d1e3f13b846349a998112f3d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='selectall']/following::input[@name='selected_id']"}
+  (Session info: chrome=144.0.7559.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '030fcf7918'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [981443e6d1e3f13b846349a998112f3d, findElement {using=xpath, value=//input[@name='selectall']/following::input[@name='selected_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.110, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57095}, goog:processID: 11040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57095/devtoo..., se:cdpVersion: 144.0.7559.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 981443e6d1e3f13b846349a998112f3d
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -289,6 +382,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountDelete -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:29:00 IST" name="afterMethod" finished-at="2025-09-22T16:29:02 IST" duration-ms="2545" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -302,6 +396,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- afterTest -->
         <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@65e98b1c]" started-at="2025-09-22T16:29:03 IST" name="afterSuite" finished-at="2025-09-22T16:29:03 IST" duration-ms="2" status="PASS">
+=======
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:58:25 IST" name="afterMethod" finished-at="2026-02-03T20:58:28 IST" duration-ms="2596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:58:28 IST" name="afterClass" finished-at="2026-02-03T20:58:29 IST" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:58:29 IST" name="afterTest" finished-at="2026-02-03T20:58:29 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.eva.marketing.submodule.testcases.MarketingAccounts@7586beff]" started-at="2026-02-03T20:58:29 IST" name="afterSuite" finished-at="2026-02-03T20:58:29 IST" duration-ms="2" status="PASS">
+>>>>>>> 478f1414d168c16ff14cecc233e23e45e9aa3e32
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
