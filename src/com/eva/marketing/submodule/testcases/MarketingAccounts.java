@@ -1,18 +1,21 @@
 package com.eva.marketing.submodule.testcases;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.eva.marketing.sub_module.reusable.code.AccountsDetailesPage;
 import com.eva.marketing.sub_module.reusable.code.Campaign_Detailes_Page;
 import com.eva.marketing.sub_module.reusable.code.Leads_Detailes_Page;
+import com.eva.testng.listner.MyTestListners;
 import com.eva.testng.listner.RetryFailedTestCases;
 import com.eva.webutil.BaseTest;
 import com.eva.webutil.WebUtil;
 import com.evs.app.reausablecode.VtigercommonCode;
 
+@Listeners(MyTestListners.class)
 public class MarketingAccounts extends BaseTest {
 
-	@Test
+	@Test(retryAnalyzer = RetryFailedTestCases.class, priority = 0)
 	public void verifyCreateNewAccount() {
 
 		VtigercommonCode vtObj = new VtigercommonCode(util);
@@ -61,7 +64,7 @@ public class MarketingAccounts extends BaseTest {
 
 	}
 
-	@Test
+	@Test(retryAnalyzer = RetryFailedTestCases.class, priority = 1)
 	public void verifyAccountDelete() {
 		WebUtil util = WebUtil.getInstance();
 		VtigercommonCode vtObj = new VtigercommonCode(util);

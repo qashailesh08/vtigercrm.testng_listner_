@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Parameters" class="navigator-link">
-              <span class="suite-name border-passed">Parameters</span>
+              <span class="suite-name border-failed">Parameters</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parameters" class="hide-methods failed suite-Parameters"> (hide)</a> <!-- hide-methods failed suite-Parameters -->
+                      <a href="#" panel-name="suite-Parameters" class="show-methods failed suite-Parameters"> (show)</a> <!-- show-methods failed suite-Parameters -->
+                    </span>
+                    <div class="method-list-content failed suite-Parameters">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parameters" title="com.eva.marketing.submodule.testcases.MarketingAccounts" class="method navigator-link" hash-for-method="verifyAccountDelete">verifyAccountDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parameters -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Parameters" class="hide-methods skipped suite-Parameters"> (hide)</a> <!-- hide-methods skipped suite-Parameters -->
+                      <a href="#" panel-name="suite-Parameters" class="show-methods skipped suite-Parameters"> (show)</a> <!-- show-methods skipped suite-Parameters -->
+                    </span>
+                    <div class="method-list-content skipped suite-Parameters">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parameters" title="com.eva.marketing.submodule.testcases.MarketingAccounts" class="method navigator-link" hash-for-method="verifyAccountDelete">verifyAccountDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Parameters -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +131,7 @@
                     <div class="method-list-content passed suite-Parameters">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parameters" title="com.eva.marketing.submodule.testcases.Marketing_Campaings" class="method navigator-link" hash-for-method="verifyCreateNewCampaings">verifyCreateNewCampaings</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Parameters" title="com.eva.marketing.submodule.testcases.MarketingAccounts" class="method navigator-link" hash-for-method="verifyCreateNewAccount">verifyCreateNewAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Parameters -->
@@ -118,17 +146,105 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Parameters" class="panel Parameters">
-          <div class="suite-Parameters-class-passed">
+          <div class="suite-Parameters-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.eva.marketing.submodule.testcases.Marketing_Campaings</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.eva.marketing.submodule.testcases.MarketingAccounts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCreateNewCampaings">
-                  </a> <!-- verifyCreateNewCampaings -->
-                  <span class="method-name">verifyCreateNewCampaings</span>
+                  <a name="verifyAccountDelete">
+                  </a> <!-- verifyAccountDelete -->
+                  <span class="method-name">verifyAccountDelete</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;selectall&apos;]/following::input[@name=&apos;selected_id&apos;]&quot;}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cc4ac4c59b2312b27cd69e725e95de8, findElement {value=//input[@name=&apos;selectall&apos;]/following::input[@name=&apos;selected_id&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63006}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63006/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cc4ac4c59b2312b27cd69e725e95de8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.eva.webutil.WebUtil.click(WebUtil.java:980)
+	at com.evs.app.reausablecode.VtigercommonCode.deleleSub_Module_Table_Information(VtigercommonCode.java:181)
+	at com.eva.marketing.submodule.testcases.MarketingAccounts.verifyAccountDelete(MarketingAccounts.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parameters-class-failed -->
+          <div class="suite-Parameters-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.eva.marketing.submodule.testcases.MarketingAccounts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountDelete">
+                  </a> <!-- verifyAccountDelete -->
+                  <span class="method-name">verifyAccountDelete</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;selectall&apos;]/following::input[@name=&apos;selected_id&apos;]&quot;}
+  (Session info: chrome=140.0.7339.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48fcd9fe322fc99deb430b95299391fd, findElement {value=//input[@name=&apos;selectall&apos;]/following::input[@name=&apos;selected_id&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\91933\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62934/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48fcd9fe322fc99deb430b95299391fd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.eva.webutil.WebUtil.click(WebUtil.java:980)
+	at com.evs.app.reausablecode.VtigercommonCode.deleleSub_Module_Table_Information(VtigercommonCode.java:181)
+	at com.eva.marketing.submodule.testcases.MarketingAccounts.verifyAccountDelete(MarketingAccounts.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parameters-class-skipped -->
+          <div class="suite-Parameters-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.eva.marketing.submodule.testcases.MarketingAccounts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateNewAccount">
+                  </a> <!-- verifyCreateNewAccount -->
+                  <span class="method-name">verifyCreateNewAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,7 +266,7 @@
     &lt;parameter name=&quot;url&quot; value=&quot;http:/localhost:8888&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.eva.marketing.submodule.testcases.Marketing_Campaings&quot;/&gt;
+      &lt;class name=&quot;com.eva.marketing.submodule.testcases.MarketingAccounts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Marketing Leads Creation with listner --&gt;
 &lt;/suite&gt; &lt;!-- Parameters --&gt;
@@ -190,16 +306,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCreateNewCampaings')
-data.setCell(0, 2, 'com.eva.marketing.submodule.testcases.Marketing_Campaings')
-data.setCell(0, 3, 41463);
+data.setCell(0, 1, 'verifyCreateNewAccount')
+data.setCell(0, 2, 'com.eva.marketing.submodule.testcases.MarketingAccounts')
+data.setCell(0, 3, 42864);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAccountDelete')
+data.setCell(1, 2, 'com.eva.marketing.submodule.testcases.MarketingAccounts')
+data.setCell(1, 3, 18367);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAccountDelete')
+data.setCell(2, 2, 'com.eva.marketing.submodule.testcases.MarketingAccounts')
+data.setCell(2, 3, 9392);
 window.suiteTableData['Parameters']= { tableData: data, tableDiv: 'times-div-Parameters'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Parameters">
               </div> <!-- times-div-Parameters -->
             </div> <!-- times-div -->
@@ -225,42 +349,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.eva.marketing.submodule.testcases.Marketing_Campaings</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.eva.marketing.submodule.testcases.MarketingAccounts</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuiteMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTestMethod</span>
-                <span class="method-start">286 ms</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClassMethod</span>
-                <span class="method-start">315 ms</span>
+                <span class="method-start">630 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chromebrowser, admin, admin, http:/localhost:8888, woodspice, public void com.eva.marketing.submodul...)</span>
-                <span class="method-start">334 ms</span>
+                <span class="method-start">655 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCreateNewCampaings</span>
-                <span class="method-start">23734 ms</span>
+                <span class="method-name">verifyCreateNewAccount</span>
+                <span class="method-start">53856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">65202 ms</span>
+                <span class="method-start">96728 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chromebrowser, admin, admin, http:/localhost:8888, woodspice, public void com.eva.marketing.submodul...)</span>
+                <span class="method-start">99474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountDelete</span>
+                <span class="method-start">123699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">142076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chromebrowser, admin, admin, http:/localhost:8888, woodspice, public void com.eva.marketing.submodul...)</span>
+                <span class="method-start">144670 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAccountDelete</span>
+                <span class="method-start">177259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186658 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">67629 ms</span>
+                <span class="method-start">189204 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">68228 ms</span>
+                <span class="method-start">189914 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">68289 ms</span>
+                <span class="method-start">190000 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,7 +8,7 @@
 		<parameter name="colortheme" value="woodspice"></parameter>
 		<classes>
 			<class
-				name="com.eva.marketing.submodule.testcases.Marketing_Campaings">
+				name="com.eva.marketing.submodule.testcases.MarketingAccounts">
 			</class>
 		</classes>
 	</test>

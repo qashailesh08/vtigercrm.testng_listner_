@@ -13,11 +13,12 @@ public class BaseTest {
 	@BeforeSuite
 	public void beforeSuiteMethod() {
 		System.out.println("ExtentReports initialized");
-		WebUtil.generateReport();
+		
 	}
 
 	@BeforeTest
 	public void beforeTestMethod() {
+		WebUtil.generateReport();
 		util = WebUtil.getInstance();
 		System.out.println("I am before Test Method");
 	}
